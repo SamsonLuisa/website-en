@@ -1,0 +1,564 @@
+*{
+    box-sizing: border-box; 
+}
+
+body{   
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: rgb(20, 19, 19);
+    color:aliceblue;
+    font-family: Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 16px; 
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+body.light {
+    background: #ffffff;
+    color: #000000;
+}
+
+
+/*continutul scris*/
+/* ======================================================= */
+
+.main{
+    padding: 20px;
+}
+
+.main section{
+    margin:5px;
+}
+
+/* ======================================================= */
+
+
+
+.continut{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1.5em 0em;
+}
+
+/*bara de cautare care se afla in header*/
+
+.header img{
+    padding: 1em;
+    margin: 1.5em 0.1em;
+    width: 70px;
+    height: 70px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 0.5em;
+    border-radius: 35px;
+    background: aliceblue;
+    margin-right: 2em;
+}
+
+.input-search{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: 0.5em;
+}
+
+.icone-search{
+    color: #424242;
+}
+
+
+
+
+.start{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 2em;
+    font-size: 13px;
+}
+
+.openbtn {
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: blueviolet;
+    opacity: 0.6;
+    color: white;
+    margin: 0.5em;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+.mobile-btn-open{
+    display: none;
+}
+
+.mobile-btn-close{
+    display: none;
+}
+
+
+
+
+
+.meniu{
+    background-color: rgb(20, 19, 19);
+    width: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: width 0.3s ease;
+    scrollbar-color: black;
+    overflow-y: auto;
+}
+
+.meniu ul{
+    list-style-type: none; 
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    height: 100%;   
+    overflow: auto;
+    
+}
+
+.meniu li a{
+    display: block;
+    color: #ffffff;
+    padding: 9px 20px;
+    text-decoration: none;
+}
+
+.meniu li a:hover{
+    background-color: hsl(271, 74%, 52%);
+    color: white;
+}
+
+.meniu li a:active {
+    background-color: #e409eb;
+    color: white;
+}
+
+#navbar_meniu{
+    padding: 0.5em;
+
+}
+
+.meniu.active {
+    width: 250px;
+    padding: 1em;
+}
+
+
+
+.meniu::-webkit-scrollbar {
+    width: 10px;
+}
+
+.meniu::-webkit-scrollbar-track {
+    background: #2a2a2a;   /* gri închis pentru fundal */
+    border-radius: 5px;
+}
+
+.meniu::-webkit-scrollbar-thumb {
+    background-color: #888888;  /* gri neutru pentru scroll */
+    border-radius: 5px;
+    border: 2px solid #2a2a2a;
+}
+
+.meniu::-webkit-scrollbar-thumb:hover {
+    background-color: #555555;  /* gri mai închis la hover */
+}
+
+
+
+/*stil pentru conjugari*/
+
+
+.chenar_conjugari {
+    border-style: none none none solid;
+    border-color: blueviolet;
+    border-width: 5px;
+    padding-left: 4px;
+    margin-left: 70px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+
+
+}
+
+.chenar_conjugari ul{
+    list-style-type: none;
+    padding: inherit;
+    margin: 3px;
+}
+
+
+
+
+
+
+.buton-next a:link, 
+.buton-next a:visited{
+    background-color: blueviolet;
+    color:aliceblue;
+    border:2px solid blueviolet;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 3em;
+    padding: 1em 1.5em;
+}
+
+.buton-next a:hover, 
+.buton-next a:active{
+    background-color: aliceblue;
+    color: hsl(271, 74%, 52%);
+}
+
+table {
+    border: 0.5px solid rgb(214, 214, 214);
+    padding: 0.3em;
+    border-radius: 0.5em;
+    width: 100%;
+    border-collapse: separate; /* ca să putem controla spațiul între celule */
+    border-spacing: 0 8px; /* spațiu vertical între rânduri */
+    margin: 2em 0;
+  }
+
+
+
+
+table th, table td  {
+    border: 0.5px solid rgb(214, 214, 214);
+    padding: 2em;
+    font-size: 16px;
+    height: auto;
+    max-width: 100%;
+    margin: 1em;
+    
+}
+
+
+
+table th {
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+table td {
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.6; /* text mai aerisit */
+}
+
+
+
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: black;
+    color: #ffffff;
+    padding-bottom: 70px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid  hsl(271, 74%, 52%);
+}
+
+footer div{
+    text-align: center;
+}
+
+footer img{
+    max-width: 128px;
+    max-height: 128px;
+    margin: 2em;
+    padding: 1em;
+}
+
+footer p{
+    color: #ffffff;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.link {
+  display: flex;
+  flex-direction: column; 
+}
+
+
+.link a {
+    text-decoration: none;
+    color: hsl(271, 74%, 52%);
+    line-height: 0.5;  
+}
+
+.link a:link,
+.link a:visited{
+    text-decoration: none;
+    color: hsl(271, 74%, 52%);
+}
+
+.link a:hover,
+.link a:active{
+    color: hsl(271, 70%, 33%);
+
+}
+
+
+
+.future_simple_p{
+    font-size: 20px;
+    font-style:unset;
+}
+
+
+.social a {
+    margin-right: 20px;
+    font-size: 1.4rem;
+    color: #ddd;
+    transition: transform 0.2s, color 0.3s;
+}
+
+.social a:hover {
+    color: hsl(271, 70%, 33%);
+    transform: scale(1.1);
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    body{
+        font-size: 16px;       
+        margin: 0em;
+        min-height: 100vh;
+        display: block;
+        overflow-x: hidden;
+    }
+
+    .continut{
+        width: 100%;
+    }
+    
+   
+    
+    .main {
+        padding: 0;
+        margin: 5px;
+        flex: 1 0 auto;
+        
+    }
+
+
+    .main section {
+        margin-bottom: 1.5em;  
+    }
+    
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        flex:1;
+        padding: 0em;
+        
+    }
+
+    .header img {
+        width: 53px;
+        height: 53px;
+        padding: 0%;
+    }
+
+
+    .search{
+        margin: 0.5em 1em 2em 1em;
+    }
+
+
+    .openbtn{
+        display: none;
+    }
+
+    .mobile-btn-open {
+        display: inline-block;
+        font-size: 1em;
+        cursor: pointer;
+        background-color: blueviolet;
+        color: white;
+        margin: 0.5em;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 10px;
+    }
+
+
+    
+
+    .start{
+        display: inline-flex;
+        justify-content: space-between;
+        margin: 1em;
+        align-items: center;
+    }
+
+    .table-wrapper {
+        overflow-y: auto;
+    }
+
+    table{        
+        border-collapse: collapse;
+        font-size: 13px; 
+        padding: 8px;
+    }
+
+
+
+    table, td, th {
+        border: 1px solid;        
+    }
+
+
+
+    .chenar_conjugari {
+        border-style: none none none none;
+        padding: 10px;        
+        margin: 1em 0;        
+    }
+
+
+    .meniu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-bottom: 500px;
+        text-align: center;
+    }
+
+    .meniu .scrollable{
+        position: relative;
+        top: 2px;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+        
+   
+   
+   
+    .meniu .mobile-btn-close {
+        position: absolute;
+        font-size: 30px;
+        top: 15px;
+        right: 35px;
+    }
+
+
+    .meniu a{
+        text-align: center;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .mobile-btn-close{
+        display: inline-block;
+        background-color: rgb(20, 19, 19);
+        color: rgb(252, 250, 255);
+    }
+    
+    .navbar_meniu{
+        text-align: center;
+        padding: 0.5em;
+        font-size: 25px;
+    }
+    
+
+    
+    footer{
+        min-height: 530px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 2em;
+        margin: 3em 0em;
+        overflow: visible;
+    }
+    footer img{
+        display: none;
+    }
+
+    .buton-next {
+        display: none;
+       
+    }
+    
+    footer div{
+        align-items: center;
+    }
+
+    footer a{
+        padding: 1.5em;
+    }
+
+    .future_simple_h2{
+        font-size: 20px;
+        margin: 0.5em;
+    }
+    
+    .link {
+        display: flex;
+        flex-direction: column; 
+        gap:0;
+        line-height: 0.01;
+    }
+
+    .link a {
+        text-decoration: none;
+        color: hsl(271, 74%, 52%);
+       
+    }
+
+    .social{
+        display: none;
+    }
+}
+    

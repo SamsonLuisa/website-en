@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Timpurile verbale</title>
+        <link rel="icon" type="image/x-icon" href="imge/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+
+            body {
+                background: #000000;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.125rem; 
+                width: 100%;   
+                margin: 0em;
+                overflow-x: hidden;
+                overflow-y: visible;
+            } 
+
+
+            #titlu{
+                text-align:left;
+                font-size: 3rem;
+                margin: 0em;
+                padding: 0.5em 0.5em 0em 0.5em;
+                color:rgb(104, 32, 172);
+            }
+
+
+            .continut{
+                background: linear-gradient(to bottom,
+                                            #000000 0%,     /* negru la început */
+                                            #0d0d0d 20%,    /* gri foarte închis, apare devreme */
+                                            #222222 100%   
+                                        );
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 3em 2em;
+                color:rgb(255, 255, 255);
+            }
+
+
+
+            .continut h2{
+                text-align: center;
+                color: rgb(125, 8, 234);
+            }
+
+            .continut ul{
+                text-align: center;
+                list-style: none; 
+                color:antiquewhite;
+            }
+
+
+
+            .continut div{
+                border: 3px solid rgb(104, 32, 172);
+                padding: 2em;
+                align-items: center;
+                border-radius: 10px;
+                
+            }
+
+            a:link, a:visited{
+                color:rgb(255, 255, 255); 
+                text-decoration: none;
+            }
+
+            a:hover{
+                color:blueviolet;
+                font-family:monospace;
+                text-decoration: underline;
+            }
+
+            .imagine{
+                display: block;
+                width: 85%;
+                margin: auto;
+            }
+
+
+            @media(max-width: 768px) {
+                body{
+                    font-size: 1.0625rem;    
+                    margin: 0;    
+                      
+                }
+
+
+                #titlu{
+                    font-size: 2rem;
+                    padding: 0em;
+                    margin:0.5em;
+                }
+
+                .continut{
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2em;
+                    margin-bottom: 300px;
+                }
+                
+                .continut div{
+                    height: 30%;
+                }
+
+                .continut ul{
+                    font-size: 0.9375rem;
+                }
+
+
+                .continut h2{
+                    font-size: 1.375rem;
+                }
+
+
+                .imagine {
+                    width: 100%;
+                    margin: auto;
+                    padding: 1em;
+                }
+
+            }
+                
+
+        </style>
+    </head>
+    <body>
+        <h1 id="titlu"><strong>Timpurile verbale</strong></h1>
+
+
+        <div>
+            <img class="imagine" src="imge/e2.jpg" alt="imagine invata engleza">
+        </div>
+
+
+        <div class="continut">
+
+            <div>
+                <h2>Past Form</h2>
+                <ul>
+                    <li><a href="pag6.htm">past simple</a></li>
+                    <li><a href="pag7.htm">past continuous</a></li>
+                    <li><a href="pag8.htm">past perfect</a></li>
+                    <li><a href="pag9.htm">past perfect continuous</a></li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h2>Prezent Form</h2>
+                <ul>
+                    <li><a href="pag2.htm">present simple</a></li>
+                    <li><a href="pag3.htm">present continuous</a></li>
+                    <li><a href="pag4.htm">present perfect</a></li>
+                    <li><a href="pag5.htm">present perfect continuous</a></li>
+                    
+                </ul>
+            </div>
+
+
+            <div>
+                <h2>Future Form</h2>
+                <ul>
+                    <li><a href="pag10.htm">future simple</a></li>
+                    <li><a href="pag11.htm">future continuous</a></li>
+                    <li><a href="pag12.htm">future perfect</a></li>
+                    <li><a href="pag13.htm">future perfect continuous</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </body>
+</html>
