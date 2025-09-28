@@ -7,7 +7,7 @@ body{
     align-items: flex-start;
     flex-wrap: wrap;
     background-color: rgb(20, 19, 19);
-    color:aliceblue;
+    color:white;
     font-family: Verdana, sans-serif;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -561,4 +561,5 @@ footer p{
         display: none;
     }
 }
+
     
