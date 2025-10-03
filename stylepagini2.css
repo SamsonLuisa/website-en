@@ -13,6 +13,10 @@ body{
     
 }
 
+main{
+    margin:0;
+}
+
 .titlu{
     margin: 2em;
     margin-bottom: 1em;
@@ -179,4 +183,5 @@ footer p{
     
 
 }
+
 
